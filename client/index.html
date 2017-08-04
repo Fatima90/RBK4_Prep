@@ -47,7 +47,7 @@
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Week4
         <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="{{weekLecture['title']}}" ng-repeat="weekLecture in weeks['four']"></a></li>
+            <li><a href="{{weekLecture['title']}}" ng-repeat="weekLecture in weeks['four'] | orderBy: ['day','part']">{{weekLecture['day']}}-{{weekLecture['part']}}.{{weekLecture['title']}}</a></li>
           </ul>
         </li>
 
@@ -87,7 +87,7 @@
 
         </li>
 
-        </li> 
+        </li>
         <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Wiki
         <span class="caret"></span></a>
