@@ -8,7 +8,13 @@ angular.module('prep.weeks',[])
 	$scope.getAllWeeks = function (){
 		Weeks.getLecturesByWeek(1)
 		.then(function(resp){
-			$scope.weeks['one']=resp.results;		
+			$scope.weeks['one'] = [];
+			for(var i=0; i < resp.results.length ; i++){
+				console.log("hollla",resp.results[i]['status']);
+				if(resp.results[i]['status']){
+					$scope.weeks['one'].push(resp.results[i]);
+				}
+			}
 		})
 		Weeks.getLecturesByWeek(2)
 		.then(function(resp){

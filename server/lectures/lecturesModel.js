@@ -8,6 +8,7 @@ var LecturesSchema=new mongoose.Schema({
 	week : Number,
 	day: Number,
 	part: Number,
+	status: Boolean,
 	questions: [{type: mongoose.Schema.Types.ObjectId, ref: 'questions'}]
 });
 

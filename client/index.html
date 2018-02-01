@@ -29,37 +29,29 @@
           </ul>
         </li>
 
-         <li class="dropdown">
+      <!--    <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Week2
         <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="{{weekLecture['title']}}" ng-repeat="weekLecture in weeks['two'] | orderBy: ['day','part']">{{weekLecture['day']}}-{{weekLecture['part']}}. {{weekLecture['title']}}</a></li>
           </ul>
-        </li>
+        </li> -->
 
-        <li class="dropdown">
+        <!-- <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Week3
         <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="{{weekLecture['title']}}" ng-repeat="weekLecture in weeks['three'] | orderBy: ['day','part']">{{weekLecture['day']}}-{{weekLecture['part']}}.{{weekLecture['title']}}</a></li>
-        </ul>
-        <li class="dropdown">
+        </ul> -->
+<!--         <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Week4
         <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="{{weekLecture['title']}}" ng-repeat="weekLecture in weeks['four'] | orderBy: ['day','part']">{{weekLecture['day']}}-{{weekLecture['part']}}.{{weekLecture['title']}}</a></li>
           </ul>
-        </li>
+        </li> -->
 
-<!--
-        <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Week5
-        <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="{{weekLecture['title']}}" ng-repeat="weekLecture in weeks['five']">{{weekLecture['title']}}</a></li>
-          </ul>
-        </li>-->
-        <li class="dropdown">
+<!--         <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Challenges
         <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -68,33 +60,35 @@
             <li><a href="/challenge3"> Challenge 3 </a></li>
           </ul>
         </li>
-        <li class="dropdown">
+         <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Solutions
         <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="/solutions/{{solution}}" ng-repeat="solution in Solutions">{{solution}}</a></li>
           </ul>
         </li>
+-->
         <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Other
         <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="/chromeConsole">Chrome Console</a></li>
             <li><a href="/sublimeText">Sublime Text</a></li>
-            <li><a href="/debugging">Debugging</a></li>
-            <li><a href="/whiteboarding">Whiteboarding</a></li>
+            <!-- <li><a href="/debugging">Debugging</a></li> -->
+            <!-- <li><a href="/whiteboarding">Whiteboarding</a></li> -->
+           <!--  <li><a href="/stylingguide">Style Guide</a></li> -->
           </ul>
 
         </li>
 
         </li>
         <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Wiki
+        <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="#">Wiki
         <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="/lightning">Lightning Talk</a></li>
           </ul>
-        </li>
+        </li> -->
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a ng-click="logout()"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
