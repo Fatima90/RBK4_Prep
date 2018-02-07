@@ -37,7 +37,10 @@ angular.module('prep.weeks',[])
 	$scope.getAllSolutionLectures = function(){
 		Solutions.getAllSolutionLectures()
 		.then(function(resp){
-			$scope.Solutions=resp.solutions;
+			console.log("ssss",resp.solutions)
+			$scope.Solutions.push('Introduction to Repetition');
+			$scope.Solutions.push('Iteration with the while loop');
+			$scope.Solutions.push('Introduction to Arrays');
 		})
 	}
 

@@ -16,6 +16,7 @@ angular.module('prep.solutions',['hljs'])
 					$scope.slide= resp.answers[0]['slide'];				
 				}
 			}
+			
 		})
 	}
 	
