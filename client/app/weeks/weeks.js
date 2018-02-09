@@ -41,6 +41,7 @@ angular.module('prep.weeks',[])
 			$scope.Solutions.push('Introduction to Repetition');
 			$scope.Solutions.push('Iteration with the while loop');
 			$scope.Solutions.push('Introduction to Arrays');
+			$scope.Solutions.push('Array Iteration with while & for');
 		})
 	}
 
