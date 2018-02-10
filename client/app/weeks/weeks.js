@@ -10,7 +10,6 @@ angular.module('prep.weeks',[])
 		.then(function(resp){
 			$scope.weeks['one'] = [];
 			for(var i=0; i < resp.results.length ; i++){
-				console.log("hollla",resp.results[i]['status']);
 				if(resp.results[i]['status']){
 					$scope.weeks['one'].push(resp.results[i]);
 				}
@@ -18,7 +17,12 @@ angular.module('prep.weeks',[])
 		})
 		Weeks.getLecturesByWeek(2)
 		.then(function(resp){
-			$scope.weeks['two']=resp.results;
+			$scope.weeks['two']=[];
+			for(var i=0; i < resp.results.length ; i++){
+				if(resp.results[i]['status']){
+					$scope.weeks['two'].push(resp.results[i]);
+				}
+			}
 		})
 		Weeks.getLecturesByWeek(3)
 		.then(function(resp){
