@@ -26,7 +26,13 @@ angular.module('prep.weeks',[])
 		})
 		Weeks.getLecturesByWeek(3)
 		.then(function(resp){
-			$scope.weeks['three']=resp.results;	
+			$scope.weeks['three']=[];
+			for(var i=0; i < resp.results.length ; i++){
+				if(resp.results[i]['status']){
+					$scope.weeks['three'].push(resp.results[i]);
+				}
+			}
+
 		})
 		Weeks.getLecturesByWeek(4)
 		.then(function(resp){
