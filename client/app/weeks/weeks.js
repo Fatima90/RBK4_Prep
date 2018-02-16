@@ -47,13 +47,21 @@ angular.module('prep.weeks',[])
 	$scope.getAllSolutionLectures = function(){
 		Solutions.getAllSolutionLectures()
 		.then(function(resp){
-			//console.log("ssss",resp.solutions)
+			console.log("ssss",resp.solutions)
 			$scope.Solutions.push('Introduction to Repetition');
 			$scope.Solutions.push('Iteration with the while loop');
 			$scope.Solutions.push('Introduction to Arrays');
 			$scope.Solutions.push('Array Iteration with while & for');
 			$scope.Solutions.push('Introduction to Objects');
 			$scope.Solutions.push('Data Modeling');
+			$scope.Solutions.push('Introduction to Higher Order Functions');
+			$scope.Solutions.push('Improved each: Passing Element Indices');
+			$scope.Solutions.push('Improved each: Iterating Over Objects');
+			$scope.Solutions.push('Map');
+			$scope.Solutions.push('Improved Map');
+			$scope.Solutions.push('Filter');
+			$scope.Solutions.push('Reduce');
+			$scope.Solutions.push('Improved Reduce');
 		})
 	}
 
