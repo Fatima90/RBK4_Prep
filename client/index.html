@@ -21,7 +21,7 @@
         <a style="color : white" class="navbar-brand" href="/calendar">RBK</a>
       </div>
       <ul class="nav navbar-nav">
-      <li class="dropdown">
+      <!-- <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Week1
         <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -43,7 +43,7 @@
           <ul class="dropdown-menu">
             <li><a href="{{weekLecture['title']}}" ng-repeat="weekLecture in weeks['three'] | orderBy: ['day','part']">{{weekLecture['day']}}-{{weekLecture['part']}}.{{weekLecture['title']}}</a></li>
         </ul>
-      </li>
+      </li> -->
 <!--         <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Week4
         <span class="caret"></span></a>
@@ -57,18 +57,18 @@
         <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="/challenge"> Challenge 1 </a></li>
-            <!-- <li><a href="/challenge2"> Challenge 2 </a></li>
-            <li><a href="/challenge3"> Challenge 3 </a></li> -->
+             <li><a href="/challenge2"> Challenge 2 </a></li>
+            <!-- <li><a href="/challenge3"> Challenge 3 </a></li> -->
           </ul>
         </li>
        
-         <li class="dropdown">
+<!--          <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Solutions
         <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="/solutions/{{solution}}" ng-repeat="solution in Solutions">{{solution}}</a></li>
           </ul>
-        </li>
+        </li> -->
 
         <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Other
