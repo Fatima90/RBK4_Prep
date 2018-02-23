@@ -47,7 +47,6 @@ angular.module('prep.weeks',[])
 	$scope.getAllSolutionLectures = function(){
 		Solutions.getAllSolutionLectures()
 		.then(function(resp){
-			console.log("ssss",resp.solutions)
 			$scope.Solutions.push('Introduction to Repetition');
 			$scope.Solutions.push('Iteration with the while loop');
 			$scope.Solutions.push('Introduction to Arrays');
@@ -62,6 +61,10 @@ angular.module('prep.weeks',[])
 			$scope.Solutions.push('Filter');
 			$scope.Solutions.push('Reduce');
 			$scope.Solutions.push('Improved Reduce');
+			$scope.Solutions.push('Introduction to Closures');
+			$scope.Solutions.push("Closures Adding Methods");
+			$scope.Solutions.push("Data Modeling with Closures");
+			$scope.Solutions.push("Object Oriented Programming");
 		})
 	}
 
